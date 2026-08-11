@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeAlpha Calculator</title>
+  <link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+
+</head>
+<body>
+
+  <div class="calculator">
+  
+    <h1 class="app-title">CodeAlpha Calculator</h1>
+
+    <div class="display">
+      <div class="expression" id="expression"></div>
+      <div class="result" id="result">0</div>
+    </div>
+    
+    <div class="keypad">
+      <button class="btn-clear" onclick="clearAll()" data-key="Escape">AC</button>
+      <button onclick="deleteLast()" data-key="Backspace">⌫</button>
+      <button onclick="appendInput('%')" data-key="%">%</button>
+      <button class="btn-op" onclick="appendInput('/')" data-key="/">÷</button>
+
+      <button onclick="appendInput('7')" data-key="7">7</button>
+      <button onclick="appendInput('8')" data-key="8">8</button>
+      <button onclick="appendInput('9')" data-key="9">9</button>
+      <button class="btn-op" onclick="appendInput('*')" data-key="*">×</button>
+
+      <button onclick="appendInput('4')" data-key="4">4</button>
+      <button onclick="appendInput('5')" data-key="5">5</button>
+      <button onclick="appendInput('6')" data-key="6">6</button>
+      <button class="btn-op" onclick="appendInput('-')" data-key="-">−</button>
+
+      <button onclick="appendInput('1')" data-key="1">1</button>
+      <button onclick="appendInput('2')" data-key="2">2</button>
+      <button onclick="appendInput('3')" data-key="3">3</button>
+      <button class="btn-op" onclick="appendInput('+')" data-key="+">+</button>
+
+      <button onclick="appendInput('0')" data-key="0">0</button>
+      <button onclick="appendInput('.')" data-key=".">.</button>
+      <button class="btn-equals" onclick="calculate()" data-key="Enter">=</button>
+    </div>
+  </div>
+</body>
+</html>
